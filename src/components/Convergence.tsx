@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import AudioPlayer from "./AudioPlayer";
 
-const AUDIO_URL = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+const AUDIO_URL = "./audio/Mallikarjun.mp3";
 
 const Convergence = () => {
   return (
@@ -25,7 +25,7 @@ const Convergence = () => {
             The convergence.
           </h2>
           <p className="text-muted-foreground font-body text-lg leading-relaxed max-w-xl mx-auto mb-10">
-            Four perspectives, one timeline, zero agreement. Tagore&apos;s genius in &ldquo;Atithi&rdquo; is not in the plot — a boy comes, a boy leaves — but in the revelation that coexistence does not produce co-understanding. Each character&apos;s story is complete, internally consistent, and utterly irreconcilable with the others.
+            The final section cements all the parallel events into a single timeline. It builds on each character and their experiences, but also results in something that is greater than the sum of its parts. This happens simply by the virtue of completing the missing factor of each narrative by bringing them together.
           </p>
           <div className="flex justify-center">
             <AudioPlayer src={AUDIO_URL} label="Narrated by Mallikarjun" />

@@ -8,12 +8,12 @@ import Convergence from "@/components/Convergence";
 const AUDIO_URL = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 
 const teamMembers = [
-  { name: "Prarabdha", role: "Narrator & Researcher", avatar: "https://i.pravatar.cc/150?img=11" },
-  { name: "Shourya", role: "Writer & Analyst", avatar: "https://i.pravatar.cc/150?img=12" },
-  { name: "Soumali", role: "Creative Director", avatar: "https://i.pravatar.cc/150?img=5" },
-  { name: "Reeju", role: "Visual Designer", avatar: "https://i.pravatar.cc/150?img=33" },
-  { name: "Rishika", role: "Editor & Curator", avatar: "https://i.pravatar.cc/150?img=9" },
-  { name: "Mallikarjun", role: "Lead Narrator", avatar: "https://i.pravatar.cc/150?img=53" },
+  { name: "Prarabdha Sachan", img: "/images/Prarabdha.jpg" },
+  { name: "Shourya Shrivastava", img: "/images/Shourya.jpeg" },
+  { name: "Soumali Sen", img: "/images/Soumali.jpg" },
+  { name: "Reeju Banerjee", img: "/images/Reeju.jpeg" },
+  { name: "Rishika Sengupta", img: "/images/Rishika.jpg" },
+  { name: "Mallikarjun Shankar", img: "/images/Mallikarjun.jpg" },
 ];
 
 const fadeUp = {
@@ -78,14 +78,13 @@ const Index = () => {
             </motion.h2>
             <motion.p variants={fadeUp} custom={1} className="text-muted-foreground font-body text-lg leading-relaxed">
               In Tagore&apos;s &ldquo;Atithi,&rdquo; a wandering boy named Tarapada arrives at the household of Motilal Babu,
-              a prosperous village patriarch. He captivates every member of the family — the patriarch who sees in him a
-              son, the young daughter Charushashi who finds a companion, and the child Sonamoni who gains a playmate.
+              a prosperous village patriarch. He captivates every member of the family. In him, the patriarch sees a
+              son, the young daughter Charushashi finds a companion, and the child Sonamoni gains a playmate.
               Yet Tarapada belongs to none of them. He is the guest who cannot be kept.
             </motion.p>
             <motion.p variants={fadeUp} custom={2} className="text-muted-foreground font-body text-lg leading-relaxed">
               This project fractures the narrative into its constituent perspectives. Each character inhabits the same
-              timeline but experiences a fundamentally different story. Their emotional truths are irreconcilable — and
-              that is precisely Tagore&apos;s point.
+              timeline but experiences a fundamentally different story. Each perspective can be something different people relate to.
             </motion.p>
             <motion.div variants={fadeUp} custom={3}>
               <AudioPlayer src={AUDIO_URL} label="Listen to the introduction — narrated by Prarabdha" />
@@ -109,7 +108,7 @@ const Index = () => {
             viewport={{ once: true }}
             className="font-display text-4xl md:text-5xl text-foreground mb-16 text-center"
           >
-            The Team
+            Team Polaris
           </motion.h2>
           <motion.div
             initial="hidden"
@@ -121,8 +120,7 @@ const Index = () => {
               <motion.div key={member.name} variants={fadeUp} custom={i}>
                 <BentoCard
                   name={member.name}
-                  avatar={member.avatar}
-                  role={member.role}
+                  avatar={member.img}
                 />
               </motion.div>
             ))}

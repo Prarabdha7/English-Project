@@ -1,6 +1,7 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect, useId } from "react";
 import { Play, Pause } from "lucide-react";
 import { motion } from "framer-motion";
+import { useGlobalAudio } from "@/contexts/AudioContext";
 
 interface AudioPlayerProps {
   src: string;
@@ -10,15 +11,26 @@ interface AudioPlayerProps {
 const AudioPlayer = ({ src, label }: AudioPlayerProps) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
+  const id = useId();
+  const { play, stop, currentlyPlaying } = useGlobalAudio();
+
+  // Sync local state when another player takes over
+  useEffect(() => {
+    if (currentlyPlaying !== id && playing) {
+      setPlaying(false);
+    }
+  }, [currentlyPlaying, id, playing]);
 
   const toggle = () => {
     if (!audioRef.current) return;
     if (playing) {
+      stop(id);
       audioRef.current.pause();
+      setPlaying(false);
     } else {
-      audioRef.current.play();
+      play(id, audioRef.current);
+      setPlaying(true);
     }
-    setPlaying(!playing);
   };
 
   return (
@@ -26,7 +38,7 @@ const AudioPlayer = ({ src, label }: AudioPlayerProps) => {
       <audio
         ref={audioRef}
         src={src}
-        onEnded={() => setPlaying(false)}
+        onEnded={() => { setPlaying(false); stop(id); }}
         preload="none"
       />
       <motion.button

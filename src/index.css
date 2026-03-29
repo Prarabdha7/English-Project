@@ -106,4 +106,17 @@
     @apply relative;
     box-shadow: 0 0 30px -5px hsl(var(--glow) / 0.5), 0 0 60px -10px hsl(var(--glow) / 0.25), inset 0 1px 0 hsl(0 0% 100% / 0.1);
   }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -20px) scale(1.05); }
+  66% { transform: translate(-20px, 15px) scale(0.95); }
 }

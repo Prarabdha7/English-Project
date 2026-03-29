@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import tagoreHero from "@/assets/tagore-hero.jpg";
 import AudioPlayer from "@/components/AudioPlayer";
 import BentoCard from "@/components/BentoCard";
+import Timeline from "@/components/Timeline";
+import Convergence from "@/components/Convergence";
 
 const AUDIO_URL = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 
@@ -91,6 +93,12 @@ const Index = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Timeline */}
+      <Timeline />
+
+      {/* Convergence */}
+      <Convergence />
 
       {/* Team Bento Grid */}
       <section id="team" className="py-32 px-6">

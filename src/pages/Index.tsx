@@ -5,7 +5,7 @@ import BentoCard from "@/components/BentoCard";
 import Timeline from "@/components/Timeline";
 import Convergence from "@/components/Convergence";
 
-const AUDIO_URL = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+const AUDIO_URL = "/audio/Prarabdha.mp3";
 
 const teamMembers = [
   { name: "Prarabdha Sachan", img: "/images/Prarabdha.jpg" },

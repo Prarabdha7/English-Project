@@ -1,4 +1,4 @@
-# ⏳ Atithi: Fractured Timelines
+#  Atithi: Fractured Timelines
 
 
 [![Academic](https://img.shields.io/badge/Course-Communicative_English-blue.svg)](#)
@@ -9,11 +9,11 @@
 
 What appears stable from the outside can feel entirely different from within. The same moment holds different meanings depending on who is living through it.
 
-### 🌐 [**Experience the Live Project Here**](https://prarabdha7.github.io/English-Project/) 
+### [**Experience the Live Project Here**](https://prarabdha7.github.io/English-Project/) 
 
 ---
 
-## 📸 Interface Gallery
+##  Interface Gallery
 
 *Click the links below to jump directly to the UI previews:*
 * [1. The Hero](#1-the-hero)
@@ -40,7 +40,7 @@ What appears stable from the outside can feel entirely different from within. Th
 
 ---
 
-## 🏛️ The Narrative Architecture
+##  The Narrative Architecture
 
 This project discards traditional multi-page navigation in favor of a continuous, psychology-driven scroll.
 
@@ -55,7 +55,7 @@ This project discards traditional multi-page navigation in favor of a continuous
 ---
 
 
-## 👥 The Architects
+## The Architects
 
 This project was conceptualized, designed, and narrated by:
 

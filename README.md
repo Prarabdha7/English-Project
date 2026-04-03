@@ -9,8 +9,7 @@
 
 What appears stable from the outside can feel entirely different from within. The same moment holds different meanings depending on who is living through it.
 
-### 🌐 [**Experience the Live Project Here**](https://[your-github-username].github.io/[your-repo-name]) 
-*(Replace the link above with your live GitHub Pages URL once deployed)*
+### 🌐 [**Experience the Live Project Here**](https://prarabdha7.github.io/English-Project/) 
 
 ---
 

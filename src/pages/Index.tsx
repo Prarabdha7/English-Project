@@ -5,15 +5,15 @@ import BentoCard from "@/components/BentoCard";
 import Timeline from "@/components/Timeline";
 import Convergence from "@/components/Convergence";
 
-const AUDIO_URL = "/audio/Prarabdha.mp3";
+const AUDIO_URL = "./audio/Prarabdha.mp3";
 
 const teamMembers = [
-  { name: "Prarabdha Sachan", img: "/images/Prarabdha.jpg" },
-  { name: "Shourya Shrivastava", img: "/images/Shourya.jpeg" },
-  { name: "Soumali Sen", img: "/images/Soumali.jpg" },
-  { name: "Reeju Banerjee", img: "/images/Reeju.jpeg" },
-  { name: "Rishika Sengupta", img: "/images/Rishika.jpg" },
-  { name: "Mallikarjun Shankar", img: "/images/Mallikarjun.jpg" },
+  { name: "Prarabdha Sachan", img: "./images/Prarabdha.jpg" },
+  { name: "Shourya Shrivastava", img: "./images/Shourya.jpeg" },
+  { name: "Soumali Sen", img: "./images/Soumali.jpg" },
+  { name: "Reeju Banerjee", img: "./images/Reeju.jpeg" },
+  { name: "Rishika Sengupta", img: "./images/Rishika.jpg" },
+  { name: "Mallikarjun Shankar", img: "./images/Mallikarjun.jpg" },
 ];
 
 const fadeUp = {

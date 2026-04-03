@@ -8,7 +8,7 @@ const characters = [
     description:
       "For Tarapada, existence is kinetic. He does not resist the warmth of Motilal Babu's household, but he simply cannot be contained by it. His freedom is not a choice; it is a condition. Every bond offered to him is a tether he will inevitably slip. The river calls, and he answers.",
     side: "left" as const,
-    audioSrc: "./public/audio/shourya.mp3",
+    audioSrc: "./audio/Shourya.mp3",
   },
   {
     character: "Charushashi",
@@ -16,7 +16,7 @@ const characters = [
     description:
       "Charushashi encounters Tarapada at the threshold of her own transformation from a girl to a woman. In him she sees someone untethered by convention. When he vanishes, a lot of what brings chaos to her ordered life disappears with him.",
     side: "right" as const,
-    audioSrc: "./public/audio/soumali.mp3",
+    audioSrc: "./audio/Soumali.mp3",
   },
   {
     character: "Motilal Babu",
@@ -24,7 +24,7 @@ const characters = [
     description:
       "Motilal Babu is the architect of belonging. He is the one who invites him to their family and gives him a place within it. When Tarapada leaves, the architecture collapses suddenly and silently and leaves a mess of his plans behind.",
     side: "left" as const,
-    audioSrc: "./public/audio/reeju.mp3",
+    audioSrc: "./audio/Reeju.mp3",
   },
   {
     character: "Sonamoni",
@@ -32,7 +32,7 @@ const characters = [
     description:
       "The youngest witness. Sonamoni watches without agenda, plays without contract. She does not try to keep Tarapada. She simply notices his presence and then, with the quiet resilience of childhood, notices his absence.",
     side: "right" as const,
-    audioSrc: "./public/audio/rishika.mp3",
+    audioSrc: "./audio/Rishika.mp3",
   },
 ];
 
